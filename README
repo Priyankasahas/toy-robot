@@ -1,0 +1,34 @@
+##################################################
+#Toy Robot Simulator Problem - Ruby Solution     #
+#    Ruby Version:ruby 2.1.1p76                  #
+##################################################
+
+# Models
+   Robot
+   PositionCommand
+
+   Facing Directions:
+   FacingNorth
+   FacingSouth
+   FacingEast
+   FacingWest
+
+# To start the application run:
+    $ ruby -Ilib ./bin/robot.rb
+
+# Application
+    On the command prompt, please enter the current position of the robot on the tabletop. This should be in the following format (not case sensitive):
+        Place 0,0,North
+    Next, you will be prompted to enter the command. Enter any of the following commands (not case sensitive):
+        MOVE
+        LEFT
+        RIGHT
+        REPORT
+    (If you mis-spell the command, do not worry. The robot will only perform action on the listed commands.)
+    Once you enter REPORT, the application will output the current position and direction of the robot in the format of "0,0,NORTH"
+
+# Tests
+    The tests have been written using RSPEC. Type the following command in the command prompt to run the tests.
+        $ rspec
+
+
