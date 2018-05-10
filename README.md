@@ -1,7 +1,4 @@
-##################################################
-#Toy Robot Simulator Problem - Ruby Solution     #
-#    Ruby Version:ruby 2.3.3                     #
-##################################################
+## Toy Robot Simulator Problem - Ruby Solution
 
 # Description
 
