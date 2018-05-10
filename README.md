@@ -1,6 +1,7 @@
-## Toy Robot Simulator Problem - Ruby Solution
+# Toy Robot Simulator Problem - Ruby Solution
 
-# Description
+# Task
+## Description
 
 - The application is a simulation of a toy robot moving on a square tabletop,
   of dimensions 5 units x 5 units.
@@ -38,7 +39,7 @@ Create an application that can read in commands of the following (textual) form:
 - Provide test data to exercise the application.
 - The application must be a command line application.
 
-# Constraints
+## Constraints
 
 - The toy robot must not fall off the table during movement. This also
   includes the initial placement of the toy robot.
@@ -46,7 +47,7 @@ Create an application that can read in commands of the following (textual) form:
 
 # Solution
 
-# Models
+## Models
    Robot
    PositionCommand
 
@@ -56,10 +57,10 @@ Create an application that can read in commands of the following (textual) form:
    FacingEast
    FacingWest
 
-# To start the application run:
+## To start the application run:
     $ ruby -Ilib ./bin/robot.rb
 
-# Application
+## Application
     On the command prompt, please enter the current position of the robot on the tabletop. This should be in the following format (not case sensitive):
         Place 0,0,North
     Next, you will be prompted to enter the command. Enter any of the following commands (not case sensitive):
@@ -70,6 +71,6 @@ Create an application that can read in commands of the following (textual) form:
     (If you mis-spell the command, do not worry. The robot will only perform action on the listed commands.)
     Once you enter REPORT, the application will output the current position and direction of the robot in the format of "0,0,NORTH"
 
-# Tests
+## Tests
     The tests have been written using RSPEC. Type the following command in the command prompt to run the tests.
         $ rspec
