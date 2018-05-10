@@ -1,6 +1,6 @@
 ##################################################
 #Toy Robot Simulator Problem - Ruby Solution     #
-#    Ruby Version:ruby 2.1.1p76                  #
+#    Ruby Version:ruby 2.3.3
 ##################################################
 
 # Models
@@ -30,5 +30,3 @@
 # Tests
     The tests have been written using RSPEC. Type the following command in the command prompt to run the tests.
         $ rspec
-
-
