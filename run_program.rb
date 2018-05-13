@@ -1,14 +1,15 @@
+# Starts the application
 class RunProgram
-
   def initialize
     @position = PositionCommand.new(start_position)
     @position.process_command(command)
   end
 
-# Gets the original location of the robot
+  # Gets the original location of the robot
   def start_position
-    position = ""
-    get_input_for("Welcome! Enter starting position (ex. Place 0,0,North)") do |input|
+    position = ''
+    welcome_message = 'Welcome! Enter starting position (ex. Place 0,0,North)'
+    get_input_for(welcome_message) do |input|
       position = input
       input_position = position.match(/[a-zA-Z]{5} \d,\d,\w*/).to_s.split(',')
       input_position.size == 3
@@ -16,14 +17,14 @@ class RunProgram
     position
   end
 
-# Gets the commands in and array
+  # Gets the commands in and array
   def command
     command = []
     i = 0
-    until command[i-1] == "REPORT"
-      get_input_for("Enter Commands (ex. Move)") do |input|
+    until command[i - 1] == 'REPORT'
+      get_input_for('Enter Commands (ex. Move)') do |input|
         command[i] = input.upcase
-        i = i + 1
+        i += 1
         !command.nil?
       end
     end

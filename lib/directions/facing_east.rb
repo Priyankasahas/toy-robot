@@ -1,13 +1,14 @@
+# Face East
 class FacingEast
   attr_reader :robot, :direction
 
   def initialize(robot)
     @robot = robot
-    @direction = "EAST"
+    @direction = 'EAST'
   end
 
   def left
-    @robot.facing_direction =  @robot.facing_north
+    @robot.facing_direction = @robot.facing_north
   end
 
   def right

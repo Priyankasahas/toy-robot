@@ -1,9 +1,10 @@
+# Face North
 class FacingNorth
   attr_accessor :robot, :direction
 
   def initialize(robot)
     @robot = robot
-    @direction = "NORTH"
+    @direction = 'NORTH'
   end
 
   def left
@@ -17,5 +18,4 @@ class FacingNorth
   def move
     @robot.set_position(@robot.x_axis, @robot.y_axis + 1)
   end
-
 end
